@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="timer text-center">0</div>
+    <div class="container">
+      <div class="text-white inline-block top-5 left-10">
+        <span class="word-no text-3xl">7</span> WORDS
+      </div>
+      <p class="mrl-10 quote leading-6 text-[15px]">
+        Be yourself; everyone else is already taken.
+      </p>
+      <textarea class="quote-input" autofocus></textarea>
+    </div>
+    <div class="btn-container gap-5 mt-10 flex-col items-center justify-center">
+      <button
+        id="start-btn"
+        class="outline-none hover:scale-105 text-sm shadow-xl duration-150 shadow-slate-900/35 font-bold text-white w-32 h-14 py-1 bg-transparent rounded-lg border-[2px] border-black"
+      >
+        START
+      </button>
+      <button
+        id="stop-btn"
+        class="hidden outline-none hover:scale-105 text-sm shadow-xl duration-150 shadow-slate-900/35 font-bold text-white w-32 h-14 py-1 bg-red-400 rounded-lg border-[2px] border-black"
+      >
+        STOP
+      </button>
+      <button
+        id="reset-btn"
+        class="outline-none hover:scale-105 text-sm shadow-xl duration-150 shadow-slate-900/35 font-bold text-white w-32 h-14 py-1 bg-transparent rounded-lg border-[2px] border-black"
+      >
+        RESET
+      </button>
+    </div>
+    <div class="hidden" id="transtion-page">
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] rounded-xl shadow-xl shadow-slate-900/35 h-[400px] bg-slate-900 text-green-500 flex items-center justify-center text-3xl font-bold"
+      >
+        <i
+          class="fa fa-check border-2 border-green-500 p-3 rounded-full mr-5"
+        ></i
+        >ALL SET
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
